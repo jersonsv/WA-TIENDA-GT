@@ -1,0 +1,22 @@
+/* Reinicio básico de estilos */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y enlaces básicos */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: darkblue;
+}
