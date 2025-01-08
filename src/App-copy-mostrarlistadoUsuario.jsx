@@ -1,4 +1,3 @@
-import "./App.css";
 import Profile from "./components/Profile.jsx";
 import UserList from "./components/UserList.jsx";
 import UserState from "./context/User/UserState.jsx";
