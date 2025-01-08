@@ -5,6 +5,7 @@ import { Header } from "../Header";
 import { Footer } from "../Footer";
 import { IS_DEVELOPMENT } from "../../config";
 import { useFilters } from "../../hooks/useFilters";
+import { Cart } from "../shoppingCart/Cart";
 
 const Ecomerce = () => {
   const { products, getProducts } = useContext(ProductContext);
@@ -19,6 +20,7 @@ const Ecomerce = () => {
   return (
     <>
       <Header />
+      <Cart />
       <Products products={filteredProducts} />
       { IS_DEVELOPMENT && <Footer /> } 
     </>

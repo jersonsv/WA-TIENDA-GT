@@ -10,12 +10,14 @@ import {
 import { OperadorDashboard } from "./components/operador/Dashboard";
 import { ClienteDashboard } from "./components/cliente/Dashboard";
 import ProductState from "./context/Product/ProductState";
+import { CartProvider } from "./context/Cart/cart.jsx";
 
 const theme = createTheme();
 
 function App() {
   return (
-    <ProductState>
+    <CartProvider>
+      <ProductState>
       <ThemeProvider theme={theme}>
         <CssBaseline>
           <BrowserRouter>
@@ -30,7 +32,8 @@ function App() {
           </BrowserRouter>
         </CssBaseline>
       </ThemeProvider>
-    </ProductState>
+      </ProductState>
+    </CartProvider>
   );
 }
 
