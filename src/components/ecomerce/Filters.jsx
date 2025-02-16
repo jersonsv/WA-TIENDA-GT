@@ -7,7 +7,7 @@ import {
   InputLabel,
   Stack,
 } from "@mui/material";
-import { useFilters } from "../hooks/useFilters";
+import { useFilters } from "../../hooks/useFilters";
 
 export function Filters() {
    const { filters, setFilters } = useFilters()//estado global 1ra fuente
@@ -36,26 +36,24 @@ export function Filters() {
     <Stack direction="row" spacing={4} sx={{ p: 2 }}>
       {/* Sección del Slider */}
       <Box width={250}>
-        <p style={whiteStyle}>Precio a partir de: Q{filters.minPrice}</p>
+        <p >Precio a partir de: Q{filters.minPrice}</p>
         <Slider
           value={filters.minPrice}
           onChange={handleChangeMinPrice}
           min={0}
           max={1000}
-          sx={{ color: "white" }}
         />
       </Box>
 
       {/* Sección del Select */}
       <FormControl sx={{ minWidth: 120 }}>
-        <InputLabel sx={whiteStyle}>Categoría</InputLabel>
+        <InputLabel>Categoría</InputLabel>
         <Select
           defaultValue="all"
           label="Categoría"
           onChange={handleChangeCategory}
           sx={{
-            ...whiteStyle,
-            "& .MuiOutlinedInput-notchedOutline": { borderColor: "white" },
+            "& .MuiOutlinedInput-notchedOutline": { borderColor: "blue" },
           }}
         >
           <MenuItem value="all">Todas</MenuItem>

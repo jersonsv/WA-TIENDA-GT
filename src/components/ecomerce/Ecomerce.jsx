@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import Products from "./Products";
-import ProductContext from "../../context/Product/ProductContext";
-import { Header } from "../Header";
-import { Footer } from "../Footer";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 import { IS_DEVELOPMENT } from "../../config";
 import { useFilters } from "../../hooks/useFilters";
-import { Cart } from "../shoppingCart/Cart";
+import { useProduct } from "../../hooks/useProduct";
+import { Cart } from "./cart/Cart";
 
 const Ecomerce = () => {
-  const { products, getProducts } = useContext(ProductContext);
+  const { products, getProducts } = useProduct();
   const { filterProducts} = useFilters()
   
   const filteredProducts = filterProducts(products);

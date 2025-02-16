@@ -1,4 +1,4 @@
-import { GET_USERS, GET_PROFILE } from "../types";
+import { GET_USERS, GET_PROFILE } from "../../actions/types";
 
 export default (state, action) => {
   const { payload, type } = action;

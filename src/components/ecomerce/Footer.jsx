@@ -1,5 +1,5 @@
-import { useCart } from "../hooks/useCart"
-import { useFilters } from "../hooks/useFilters"
+import { useCart } from "../../hooks/useCart"
+import { useFilters } from "../../hooks/useFilters"
 
 export function Footer () {
   

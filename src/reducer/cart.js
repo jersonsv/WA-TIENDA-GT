@@ -1,12 +1,6 @@
+import { CART_ACTION_TYPES } from "../actions/types"
 
-/* Usando Reducer */
 export const cartInitialState = JSON.parse(window.localStorage.getItem('cart')) || []// estado inicial
-
-export const CART_ACTION_TYPES = {
-  ADD_TO_CART: 'ADD_TO_CART',
-  REMOVE_FROM_CART: 'REMOVE_FROM_CART',
-  CLEAR_CART: 'CLEAR_CART'
-}
 
 //update localStorage with state for cart
 export const updateLocalStorage = state => {
