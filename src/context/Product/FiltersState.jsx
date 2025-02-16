@@ -1,7 +1,6 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
+import FiltersContext from "./Filters.Context";
 
-// 1. Crear el contexto: este es el que tenemos que consumir
-export const FiltersContext = createContext()
 
 // 2. Crear el Provide, para proveer el contexto: este es el que nos provee de acceso al contexto
 export function FiltersProvider({ children }) {

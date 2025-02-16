@@ -5,7 +5,7 @@ export const useCart = () => {
   const context = useContext(CartContext)
 
   if(context === undefined){
-    throw new Errot('useCart must be used within a CartProvider')
+    throw new Errot('useCart debe usarse dentro de un CartProvider')
   }
 
   return context
